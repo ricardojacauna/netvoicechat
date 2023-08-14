@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat GPT - Interaja com a IA de maneira simples">
+  
+  <title>NETVOICE Consultas aos dados - Chat GPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NETVOICE Consultas aos dados - Chat GPT</h1>
+  </header>
+  
+  <main>
+    <div class="content">
+      <label for="result">Resposta da IA:</label>
+      <textarea id="result" rows="10" disabled aria-describedby="result-desc" style="height: 70%;" placeholder="Aqui aparecerá a resposta da IA"></textarea>
+      <p id="result-desc" class="sr-only">Esta é a área onde você verá as respostas geradas pela IA.</p>
+      
+      <label for="inputQuestion">Faça uma pergunta:</label>
+      <textarea id="inputQuestion" aria-describedby="input-desc" style="height: 20%;" placeholder="Digite sua pergunta aqui"></textarea>
+      <p id="input-desc" class="sr-only">Digite suas perguntas na caixa de texto acima.</p>
+      
+      <input type="file" id="fileInput" accept=".txt">
+      <button id="uploadButton">Upload de Arquivo</button>
+      <button id="submitButton">Submeter para o Chat GPT</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 NETVOICE Consultas aos dados. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

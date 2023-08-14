@@ -1,0 +1,72 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #1d1e23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Content */
+.content {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Textareas */
+textarea {
+  resize: vertical;
+  border: 1px solid #3c3d46;
+  padding: 8px;
+  background-color: #3c3d46;
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 100%;
+  font-family: inherit;
+}
+
+textarea:focus {
+  border-color: #8257e5;
+}
+
+/* Header and Footer */
+header, footer {
+  padding: 10px 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .content {
+    width: 95%;
+  }
+}
